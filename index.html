@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form About Ice Cream</h1>
+        <p id="description">Thank you for taking the time to help us improve our ice cream</p>
+    </header>
+  
+    <div class="container">
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label" class="label">Name</label><br>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label" class="label">Email</label><br>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label" class="label">Age<span class="clue">(optional)</span></label><br>
+                <input type="number" id="number" class="form-control" min="13" max="99" name="age" placeholder="Age"><br>
+            </div>
+
+            <div class="form-group">
+                <p class="label">Which option best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full">Full-time job</option>
+                    <option value="part">Part-time job</option>
+                    <option value="no">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div class="form-group">
+
+            <div class="form-group">
+                <p class="label">Do you like ice cream?</p>
+                <label for="user-like" class="mark">
+                    <input class="input-radio" name="user-like" value="yes" type="radio">Yes
+                </label>
+                <label for="user-like" class="mark">
+                    <input class="input-radio" name="user-like" value="no" type="radio">No
+                </label>
+                <label for="user-like" class="mark">
+                    <input class="input-radio" name="user-like" value="what" type="radio">What is ice cream?
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p class="label">What are your favorite ice-cream flavors?<span class="clue">(Check all that apply)</span></p>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="chocolate" type="checkbox">Chocolate
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="strawberry" type="checkbox">Strawberry
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="vanilla" type="checkbox">Vanilla
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="lemon" type="checkbox">Lemon
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="pistachio" type="checkbox">Pistachio
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="mint" type="checkbox">Mint Chocolate Chip
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="banana" type="checkbox">Banana
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="caramel" type="checkbox">Salted Caramel
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="cookie" type="checkbox">Cookie Dough
+                </label>
+                <label for="flavors" class="mark">
+                    <input class="input-checkbox" name="flavors" value="other" type="checkbox">Other
+                </label>
+            </div>
+
+                <div class="form-group">
+                    <p class="label">Any comments or suggestions on new flavors?</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+                </div>
+
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
